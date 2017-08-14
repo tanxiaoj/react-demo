@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Nav from 'nav/Nav.js';
+import CardWrap from 'cardWrap/CardWrap.js';
 
 require('./common/style/main.css');
 
-let w1 = 'hello' ,
-	w2 = 'world' ;
+let data = [
+    {
+        number :1,
+        name :"tan",
+        url : require('img/1.1.2.2_2..png')
+    },
+    {
+        number :2,
+        name :"xiao",
+        url : require('img/1.1.2.2_2..png')
+    },
+    {
+        number :3,
+        name :"jian",
+        url : require('img/1.1.2.2_2..png')
+    }
+]
 
 ReactDOM.render(
-	<div style={ {color :"#999"} }>{w1} <span className="welcome" data-abc = '9'>{w2}</span></div>,
+	<div className="ui container">
+        <Nav></Nav>
+        <CardWrap data = { data }></CardWrap>
+    </div>,
 	document.getElementById('app')
 );
 

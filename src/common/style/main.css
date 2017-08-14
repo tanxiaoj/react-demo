@@ -1,3 +1,8 @@
-.welcome{
-	color: red;
+.ui{
+	color:#999;
+	font-size: 16px;
+}
+.img{
+    width: 100px;
+    height: 100px;
 }
